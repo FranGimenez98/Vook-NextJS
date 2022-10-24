@@ -15,12 +15,14 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+  @apply py-1 px-3 text-sm bg-[#03ddfc] text-white rounded-lg transition font-semibold
+}
+
+.dropdown-link {
+  @apply flex p-2 hover:bg-gray-100 rounded-md;
 }
